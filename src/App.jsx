@@ -6,7 +6,7 @@ import Search from "./components/Search";
 import Spinner from "./components/Spinner";
 
 const API_BASE_URL = 'https://api.themoviedb.org/3';
-const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZDU4MGZjZjRjNDExYzllYjc1ZjQ3MmQ3MjQ4ZmYwYSIsIm5iZiI6MTc1MDA1NDEwOS45MjQsInN1YiI6IjY4NGZiNGRkZDM3NGVlZjM5ZjNmZTk3MSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.S4DK3qE8_GBDCNytHPDCykSJwapyMQRBD3drLYtfMOU'; // Ensure you have set this in your .env file
+const API_KEY = import.meta.env.VITE_API_KEY
 const API_OPTIONS = {
   method: 'GET',
   headers: {
